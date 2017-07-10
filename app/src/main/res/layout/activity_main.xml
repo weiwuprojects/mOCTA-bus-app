@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wuweiprojects.com.moctabusapp.MainActivity"
+    android:layout_alignBottom="@+id/toolbar2">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:background="#1a5eab"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="6dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a5eab"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="85dp"
+        android:id="@+id/toolbar2"
+        android:layout_below="@+id/toolbar4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:text="Jul 19, 2017 2:59PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:minHeight="60dp"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:elevation="100dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/textView2"
+        android:id="@+id/videoView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toolbar2" />
+
+    <TextView
+        android:text="EXPIRES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="#FFF"
+        android:textSize="21sp"
+        android:layout_below="@+id/toolbar4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+
+</RelativeLayout>
